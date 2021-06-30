@@ -5,31 +5,27 @@
 
 div#headerFrame{
     border-top: 2px solid #284a7e;
-    border-bottom: 1px solid #aaa;
 }
 
 #headerFrame header#header{
-    /*border: 1px solid #aaa;*/
     width: 1220px;
-    height: 138px;
+    height: 126px;
     margin: 0 auto;
-    /*padding-bottom: 30px;*/
+
     align-items: flex-end;
-}
-
-#headerFrame #headerlogo{
-    margin: 10px;
-
+    /*border: 1px solid #aaa;*/
+    /*padding-bottom: 30px;*/
 }
 
 #headerFrame #headerlogo a{
     /*border: 1px solid #000;*/
-    color: #888;
     width: 183px;
     height: 40px;
-    margin-bottom: 16px;
+    margin-bottom: 17px;
     display: inline-block;
     background-image: url(../images/logo.gif);
+
+    color: #888;
 }
 
 div#headerMenuArea{
@@ -42,7 +38,7 @@ div#headerMenuArea{
 }
 
 #headerFrame #nav{
-    height: 85px;
+    height: 50px;
 
     justify-content: flex-end;
     align-items: flex-end;
@@ -51,21 +47,22 @@ div#headerMenuArea{
 
 #headerFrame nav#headerLnb{
     text-align: right;
+    padding-bottom: 30px;
     /*border: 1px solid #000;*/
-    padding-bottom: 20px;
 }
 
 #headerFrame nav#headerLnb span{
     /*border: 1px solid #f88;*/
-    padding-bottom: 8px;
     color: #284a7e;
     font-size: 15px;
     margin: 0 6px;
 }
 
-#headerFrame nav#headerLnb span:not(nth-child(2)){
+#headerFrame nav#headerLnb span:not(:nth-child(2)){
     cursor: pointer;
 }
+
+/* nav#gnb */
 
 #headerFrame nav#gnb{
     padding-left: 40px;
@@ -81,12 +78,12 @@ div#headerMenuArea{
 }
 
 #headerFrame nav#gnb ul#mainMenu>li{
-    /*border: 1px solid #0ff;*/
+    padding: 20px 0;
 }
 
 #headerFrame nav#gnb ul#mainMenu>li:first-child,
 #headerFrame nav#gnb ul#mainMenu>li:first-child>ul{
-    width: 185px;
+    width: 190px;
 }
 
 #headerFrame nav#gnb ul#mainMenu>li:nth-child(2),
@@ -111,44 +108,43 @@ div#headerMenuArea{
 
 #headerFrame nav#gnb ul.subMenu{
     border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+
+    background-color: #fff;
     position: absolute;
-    top: 45px;
-    display: none;
+    top: 69px;
     z-index: 10;
 }
 
-#headerFrame nav#gnb ul.subMenu:first-child{
-    border-left: 1px solid #ddd;
-}
 
 #headerFrame nav#gnb ul.subMenu img{
     position: relative;
-    left: -14px;
+    left: -20px;
 }
 
 
 #headerFrame nav#gnb li.mainLi>a{
     width: 100%;
+    font-size: 20px;
     text-align: center;
     display: inline-block;
-    /*padding: 30px 0;*/
-    font-size: 20px;
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 
 #headerFrame nav#gnb li.subLi>a{
-    line-height: 37px;
+    line-height: 42px;
     font-size: 14px;
     padding: 0 10px;
-    border: 1px solid #000;
 
-    /*display: inline-block;*/
+    /*border: 1px solid #000;*/
 }
 
-#headerFrame nav#gnb li.subLi:hover a{
+#headerFrame nav#gnb li.subLi:hover{
     background-color: #f56254;
     color: #fff;
 }
+
+/* nav#gnb */
 
 /* div#headerFrame */
 
@@ -156,16 +152,18 @@ div#headerMenuArea{
 
 #headerFrame div#gnbBGFrame{
     width: 100%;
-    position: relative;
+    height: 255px;
+
+    border: 1px solid #ddd;
+
+    background-color: #fff;
+    position: absolute;
+    display: none;
 }
 
 #headerFrame #gnbBG{
-    background-color: #fff;
     width: 100%;
-    height: 240px;
-    border: 1px solid #ddd;
-    position: absolute;
-    display: none;
+    height: 192px;
 }
 
 /* div#gnbBG */
@@ -175,7 +173,7 @@ div#headerMenuArea{
 
 div#searchArea{
     width: 100%;
-    height: 710px;
+    height: 712px;
     background: url(../images/visua_a.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;

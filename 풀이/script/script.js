@@ -1,14 +1,15 @@
 /* eslint-disable */
 
 $(function(){
+
     $("li.mainLi").mouseover(function(){
-        $("ul.subMenu").stop().slideDown(20);
-        $("div#gnbBG").stop().slideDown(20);
+        $("ul.subMenu").show();
+        $("div#gnbBGFrame").show();
     });
 
     $("li.mainLi").mouseout(function(){
-        $("ul.subMenu").stop().hide();
-        $("div#gnbBG").stop().hide();
+        $("ul.subMenu").hide();
+        $("div#gnbBGFrame").hide();
     });
 
 });
