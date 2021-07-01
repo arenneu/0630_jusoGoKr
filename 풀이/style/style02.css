@@ -141,6 +141,9 @@ div#headerMenuArea{
 
 #headerFrame nav#gnb li.subLi:hover{
     background-color: #f56254;
+}
+
+#headerFrame nav#gnb li.subLi:hover>a{
     color: #fff;
 }
 
@@ -177,9 +180,68 @@ div#searchArea{
     background: url(../images/visua_a.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
+
+    padding-top: 70px;
+}
+
+div#searchArea h1{
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+
+    width: 600px;
+    margin: 50px auto;
 }
 
 div#searchArea div#searchBG{
-    border: 1px solid #f00;
+    width: 770px;
+    padding: 15px 26px 28px;
     margin: 0 auto;
+    border-radius: 50px;
+
+    border: 1px solid #f80;
+
+    background-color: #fff;
 }
+
+div#searchArea div#searchBG span{
+    width: 36px;
+    height: 36px;
+
+    /*border: 1px solid #000;*/
+    display: inline-block;
+}
+
+div#searchArea div#searchBG span#closeMark{
+    text-align: center;
+    font-size: 44px;
+    line-height: 44px;
+    color: #666;
+
+    transform: translateY(7px);
+    visibility: hidden; /*공간을 남겨둔채로 사라짐*/
+    /*display: none; 공간도 사라짐*/
+}
+
+div#searchArea div#searchBG span#searchMark{
+    margin-right: 10px;
+    transform: translateY(9px);
+
+    background-position: right;
+    background-image: url(../images/btn_search.gif);
+    background-repeat: no-repeat;
+}
+
+div#searchArea div#searchBG>input{
+    color: #666;
+    font-size: 18px;
+    padding: 8px 2px;
+    width: 620px;
+    border: none;
+}
+
+div#searchArea div#searchBG>input::placeholder{
+    color: #aaa;
+    padding: 8px 2px;
+} /* :: <- 슈도엘리먼트속성*/
