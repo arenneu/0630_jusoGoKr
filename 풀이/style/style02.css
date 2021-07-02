@@ -200,7 +200,7 @@ div#searchArea div#searchBG{
     margin: 0 auto;
     border-radius: 50px;
 
-    border: 1px solid #f80;
+    /*border: 1px solid #f80;*/
 
     background-color: #fff;
 }
@@ -208,6 +208,7 @@ div#searchArea div#searchBG{
 div#searchArea div#searchBG span{
     width: 36px;
     height: 36px;
+    cursor: pointer;
 
     /*border: 1px solid #000;*/
     display: inline-block;
