@@ -171,8 +171,7 @@ div#headerMenuArea{
 
 /* div#gnbBG */
 
-
-/* div#searchArea*/
+/* div#searchArea */
 
 div#searchArea{
     width: 100%;
@@ -246,3 +245,63 @@ div#searchArea div#searchBG>input::placeholder{
     color: #aaa;
     padding: 8px 2px;
 } /* :: <- 슈도엘리먼트속성*/
+
+/* div#searchArea */
+
+/* div#mainIconLNB_Frame */
+
+div#mainIconLNB_Frame{
+    background-color: rgba(43, 52, 76, 0.85);
+    width: 100%;
+    height: 270px;
+
+    padding-top: 30px;
+    position: absolute;
+    transform: translateY(-91%);
+}
+
+div#mainIconLNB_Frame>nav{
+    padding: 10px;
+    justify-content: center;
+    /*border: 2px solid #f80;*/
+}
+
+#mainIconLNB_Frame div.mainIconBox{
+    text-align: center;
+    margin: 10px 50px;
+    cursor: pointer;
+    /*border: 1px solid #f80;*/
+}
+
+div#mainIconLNB_Frame div.mainIcon {
+    margin-bottom: 20px;
+}
+
+#mainIconLNB_Frame span{
+    color: #fff;
+    font-size: 23px;
+}
+
+/* div#mainIconLNB_Frame */
+
+/* div#jusoIntro_Frame */
+
+div#jusoIntro_Frame{
+    width: 100%;
+    background-color: #f2f2f2;
+}
+
+div#jusoIntro{
+    width: 400px;
+    height: 200px;
+    border: 1px solid #f88;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -11%);
+}
+
+
+
+/* div#jusoIntro_Frame */
+
