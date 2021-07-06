@@ -114,8 +114,8 @@ div#headerMenuArea{
     position: absolute;
     top: 69px;
     z-index: 10;
+    display: none;
 }
-
 
 #headerFrame nav#gnb ul.subMenu img{
     position: relative;
@@ -289,19 +289,99 @@ div#mainIconLNB_Frame div.mainIcon {
 div#jusoIntro_Frame{
     width: 100%;
     background-color: #f2f2f2;
+    padding-bottom: 46px;
 }
 
 div#jusoIntro{
-    width: 400px;
-    height: 200px;
-    border: 1px solid #f88;
+    width: 1200px;
+    background-color: #fff;
+
+    border: 1px solid #ccc;
+
     position: relative;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -11%);
 }
 
+/*#jusoIntro>div{
+    border: 1px solid #aaa;
+}*/
 
+#jusoIntro div#aboutJuso{
+    width: 270px;
+    padding: 24px;
+    background-color: #f8f8f8;
+}
+
+/*
+#jusoIntro div#aboutJuso>ul#jusoItem{
+    border: 1px solid #f80;
+}
+*/
+
+#jusoIntro ul#jusoItem>li{
+    line-height: 42px;
+    font-size: 17px;
+    width: 310px;
+    padding-left: 20px;
+
+    cursor: pointer;
+}
+
+.selected{
+    color: #fff;
+    font-weight: bold;
+    background-image: url(../images/tabslit_on.gif);
+    background-repeat: no-repeat;
+    -webkit-background-size: 276px 44px;
+    background-size: 276px 44px;
+}
+
+#jusoIntro>div#slide{
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+
+    overflow: hidden;
+}
+
+#jusoIntro #introLoadSign{
+    padding: 40px;
+}
+
+/* div#jusoExplain */
+
+#jusoIntro #jusoExplain{
+    width: 100%;
+    padding: 80px 40px 40px 20px;
+}
+
+#jusoIntro #jusoExplain h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+#jusoIntro #jusoExplain hr{
+    border:none;
+    border-bottom: 1px solid #aaa;
+
+    margin-bottom: 25px;
+}
+
+#jusoIntro #jusoExplain p{
+    line-height: 24px;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+#jusoIntro #jusoExplain span{
+    color: #0d87bb;
+}
+
+/* div#jusoExplain */
 
 /* div#jusoIntro_Frame */
 

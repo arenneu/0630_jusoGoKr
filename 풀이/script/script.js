@@ -65,4 +65,29 @@ $(function(){
         $("input#searchWord").focus();
 
     });
+
+    /* 도로명주소 클래스 속성 추가/제거 ul#josuItme>li */
+
+    $("ul#jusoItem>li").click(function(){
+
+        $("ul#jusoItem>li").removeClass("selected");
+        $(this).addClass("selected");
+    });
+
+    /* 도로명주소 클래스 속성 추가/제거 ul#josuItme>li */
+
+    /* 도로명 주소 슬라이드쇼 샘플(임시적용) */
+
+    $("ul#jusoItem>li:nth-child(2)").click(function(){
+        $("div#jusoIntro div#shuttleFrame").animate(
+            { "margin-right":"-800px"},
+            2000
+            );
+    });
+
+    /* 도로명 주소 슬라이드쇼 샘플(임시적용) */
+
+
+
+
 });
