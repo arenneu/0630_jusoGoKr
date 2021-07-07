@@ -301,7 +301,7 @@ div#jusoIntro{
     position: relative;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -11%);
+    transform: translate(-50%, -9%);
 }
 
 /*#jusoIntro>div{
@@ -384,4 +384,93 @@ div#jusoIntro{
 /* div#jusoExplain */
 
 /* div#jusoIntro_Frame */
+
+/* div#contentsFrame */
+
+div#contentsFrame{
+    width: 100%;
+}
+
+/* div#contents */
+
+div#contents{
+    width: 1200px;
+    padding: 60px 0 40px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+}
+
+#contents>div{
+    height: 320px;
+    border: 1px solid #8ff;
+}
+
+/* div#userService 600*320 */
+
+#contents #userService{
+    width: 600px;
+}
+
+#userService>div#api{
+    border: 1px solid #ddd;
+    background-color: #f5f7fc;
+    margin: 10px 0;
+    padding: 40px 0;
+}
+
+#userService>#api>div.apiBox{
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#userService .apiBox:not(first-child){
+    border-left: 1px solid #ddd;
+}
+
+#userService>div#api a{
+    width: 83px;
+    height: 83px;
+    line-height: 83px;
+    border-radius: 45px;
+
+    display: block;
+
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+#userService>div#api span{
+    font-size: 19px;
+}
+
+/* div#userService */
+
+/* div#noticeBoard 300*320 */
+
+#contents #noticeBoard{
+    width: 300px;
+}
+
+/* div#noticeBoard */
+
+/* div#helpCenter 300*320 */
+
+#contents #helpCenter{
+    width: 300px;
+}
+
+/* div#helpCenter */
+
+/* div#contents */
+
+/* div#contentsFrame */
+
+
+
 
