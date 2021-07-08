@@ -131,6 +131,73 @@ $(function () {
 
     /* 개발자 센터 페이지(=활용 서비스) 이동 */
 
+    /* 콘텐츠 영역 알림판 시작 */
+    /* 토글(Toggle) => 토큰값  */
+
+    var token = false;
+    var rotationChk =  setInterval(fnNoticeSlide, 4000);
+
+    function fnNoticeSlide() {
+
+
+        if (token == false) {
+
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(1).addClass("noticeSelected");
+
+
+            $("div#noticeShuttleFrame").animate({
+                    "margin-left": "-285px"
+                },
+                1000,
+                function () {
+                    token = true;
+                }
+            );
+        }
+
+        if (token == true) {
+
+            $("#noticeControl>span").removeClass("noticeSelected");
+            $("#noticeControl>span").eq(0).addClass("noticeSelected");
+
+            $("div#noticeShuttleFrame").animate({
+                    "margin-left": "0px"
+                },
+                1000,
+                function () {
+                    token = false;
+                }
+            );
+        }
+
+    }
+
+    /* 콘텐츠 영역 슬라이드쇼 애니메이션 시작 및 일시중지 */
+
+
+    var animToken = 0;
+    $("#noticeControl>img").click(function () {
+
+        if (animToken == 0) {
+            $(this).attr("src", "images/btn_play.gif"); // 일시중지 상태
+            animToken = 1;
+            clearInterval(rotationChk); // 슬라이드 순환 멈춤
+
+        } else {
+
+                $(this).attr("src", "images/btn_ps.gif"); // 애니메이션 실행(=재생)
+                animToken = 0;
+
+                rotationChk =  setInterval(fnNoticeSlide, 4000); // 슬라이드 순환 재생
+        }
+
+    });
+
+
+    /* 콘텐츠 영역 슬라이드쇼 애니메이션 시작 및 일시중지 */
+
+    /* 콘텐츠 영역 알림판 시작 */
 
 
 });
