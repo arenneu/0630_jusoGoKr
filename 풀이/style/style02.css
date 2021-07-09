@@ -382,7 +382,6 @@ div#jusoIntro{
 }
 
 /* div#jusoExplain */
-
 /* div#jusoIntro_Frame */
 
 /* div#contentsFrame */
@@ -397,13 +396,18 @@ div#contents{
     width: 1200px;
     padding: 60px 0 40px;
     margin: 0 auto;
-    border: 1px solid #aaa;
+    /*border: 1px solid #aaa;*/
     justify-content: space-between;
 }
 
 #contents>div{
     height: 320px;
-    border: 1px solid #8ff;
+    /*border: 1px solid #8ff;*/
+}
+
+#contents div h2{
+    color: #444;
+    font-size: 25px;
 }
 
 /* div#userService 580*320 */
@@ -451,7 +455,6 @@ div#contents{
 }
 
 /* div#userService */
-
 /* div#noticeBoard 290*320 */
 
 #contents #noticeBoard{
@@ -519,18 +522,130 @@ div#contents{
 }
 
 /* div#noticeBoard */
-
 /* div#helpCenter 290*320 */
 
 #contents #helpCenter{
     width: 290px;
 }
 
+#helpCenter h2{
+    /*border: 1px solid #000;*/
+    padding-bottom: 10px;
+}
+
+div#helpCenterInfo {
+    padding: 40px 40px 80px;
+    border: 1px solid #ccc;
+
+    background-image: url(../images/icon_helpcenter.png);
+    background-repeat: no-repeat;
+    background-position: 170px 100px;
+}
+
+#helpCenter span#centerPhone{
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #284a7e;
+    margin-bottom: 19px;
+    display: block;
+}
+
+#helpCenter ul li{
+    color: #666;
+    font-size: 15px;
+    line-height: 26px;
+}
+
+#helpCenter ul>span{
+    font-size: 18px;
+}
+
 /* div#helpCenter */
-
 /* div#contents */
-
 /* div#contentsFrame */
+
+/* nav#footerLAB*/
+
+nav#footerLNB{
+    padding: 14px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+ul#footerMenu{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+ul#footerMenu li{
+    color: #333;
+}
+
+ul#footerMenu li:nth-child(2n){
+    margin: 0 16px;
+}
+
+/* nav#footerLAB*/
+/* div#footerFrame */
+
+div#footerFrame{
+    padding-top: 40px;
+    /*border: 1px solid #000;*/
+    background-color: #f2f2f2;
+}
+
+#footerFrame>footer#footer{
+    width: 1200px;
+    margin: 0 auto;
+    /*border: 1px solid #f00;*/
+}
+
+#footerFrame div#footerlogo{
+    width: 180px;
+    height: 120px;
+    /*border: 1px solid #f88;*/
+    background-image: url(../images/logo_foot_gray.jpg);
+    background-repeat: no-repeat;
+}
+
+#footerFrame div#companyInfo{
+    font-size: 14px;
+   /* border: 1px solid #f88;*/
+
+    margin: 0 80px;
+    -webkit-flex: 1px;
+    -moz-flex: 1px;
+    -ms-flex: 1px;
+    -o-flex: 1px;
+    flex: 1px;
+}
+
+div#companyInfo address{
+    font-style: normal;
+    font-size: 15px;
+    color: #555;
+
+    margin-bottom: 15px;
+}
+
+div#companyInfo p{
+    color: #555;
+}
+
+
+#footerFrame div#familySite{
+    width: 215px;
+    /*border: 1px solid #f88;*/
+    background-image: url("../images/mark_wa.gif"),
+                                 url("../images/mark_klid.gif");
+    background-repeat: no-repeat;
+    background-position: left top, right top;
+
+    /* 두개이상의 배경이미지 사용시 쉼표로 나뉘어주면 된다. */
+}
+
+/* div#footerFrame */
 
 
 
